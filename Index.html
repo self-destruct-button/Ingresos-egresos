@@ -31,6 +31,22 @@
         </div>
     </div>
 
+    <form action="" id="forma" onsubmit="return false;">
+        <div class="agregar">
+            <div class="agregar_contenedor">
+                <select class="agregar_tipo" name="" id="tipo">
+                    <option value="ingreso" selected>+</option>
+                    <option value="egreso">-</option>
+                </select>
+                <input type="text" class="agregar_descripcion" placeholder="Agregar Descripción" id="descripcion">
+                <input type="number" class="agregar_valor" placeholder="Valor" id="valor" step="any">
+                <button class="agregar_btn" onclick="agregarDato()">
+                    <ion-icon name="checkbox-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </form>
+
     <div class="contenedor limpiarEstilos">
         <div class="ingreso">
             <h2 class="ingreso_titulo">Ingresos</h2>
@@ -62,19 +78,7 @@
                             </button>
                         </div>
                     </div>
-                </div>
-                <div class="elemento limpiarEstilos">
-                    <div class="elemento_descripcion">Drogas</div>
-                    <div class="derecha limpiarEstilos">
-                        <div class="elemento_valor">-6200</div>
-                        <div class="elemento_porcentaje">26%</div>
-                        <div class="elemento_eliminar">
-                            <button class="elemento_eliminar--btn">
-                                <ion-icon name="close-circle-outline"></ion-icon> 
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                </div>                
             </div>
         </div>
     </div>
